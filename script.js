@@ -1,45 +1,46 @@
-// Dynamic typing effect
-    document.addEventListener('DOMContentLoaded', function () {
-        const titles = ["Junior IT Technician", "Web Developer", "Marketing Manager"];
-        let currentTitleIndex = 0;
-        let currentCharIndex = 0;
-        const typingSpeed = 150;
-        const element = document.getElementById("dynamic-text");
+document.addEventListener("DOMContentLoaded", function () {
+    // Dynamic Typing Effect
+    const dynamicText = document.getElementById("dynamic-text");
+    const words = ["a Web Developer", "a Marketer", "a Creative Thinker"];
+    let wordIndex = 0;
+    let letterIndex = 0;
+    let isDeleting = false;
 
-        function typeTitle() {
-            const currentTitle = titles[currentTitleIndex];
-            if (currentCharIndex < currentTitle.length) {
-                element.textContent += currentTitle[currentCharIndex];
-                currentCharIndex++;
-                setTimeout(typeTitle, typingSpeed);
-            } else {
-                setTimeout(deleteTitle, typingSpeed * 3);
-            }
+    function typeEffect() {
+        let currentWord = words[wordIndex];
+        let displayText = currentWord.substring(0, letterIndex);
+        dynamicText.textContent = displayText;
+
+        if (!isDeleting && letterIndex < currentWord.length) {
+            letterIndex++;
+            setTimeout(typeEffect, 100);
+        } else if (isDeleting && letterIndex > 0) {
+            letterIndex--;
+            setTimeout(typeEffect, 50);
+        } else {
+            isDeleting = !isDeleting;
+            if (!isDeleting) wordIndex = (wordIndex + 1) % words.length;
+            setTimeout(typeEffect, 1500);
         }
+    }
+    typeEffect();
 
-        function deleteTitle() {
-            if (currentCharIndex > 0) {
-                element.textContent = element.textContent.slice(0, -1);
-                currentCharIndex--;
-                setTimeout(deleteTitle, typingSpeed / 2);
-            } else {
-                currentTitleIndex = (currentTitleIndex + 1) % titles.length;
-                setTimeout(typeTitle, typingSpeed);
-            }
-        }
+    // Mobile Menu Toggle
+    const menuIcon = document.getElementById("menu-icon");
+    const navMenu = document.getElementById("nav-menu");
 
-        typeTitle();
+    menuIcon.addEventListener("click", function () {
+        menuIcon.classList.toggle("active");
+        navMenu.classList.toggle("active");
     });
 
-// Get the menu icon and nav menu elements
-const menuIcon = document.getElementById('menu-icon');
-const navMenu = document.getElementById('nav-menu');
+    document.addEventListener("click", function (event) {
+        if (!menuIcon.contains(event.target) && !navMenu.contains(event.target)) {
+            menuIcon.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    });
 
-// Add event listener for menu toggle
-menuIcon.addEventListener('click', () => {
-  menuIcon.classList.toggle('active');
-  navMenu.classList.toggle('active');
 });
-
 
 
