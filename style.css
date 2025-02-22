@@ -108,7 +108,7 @@ header {
 
 /* Main Content */
 main {
-  padding-top: 100px; /* To avoid content overlapping with the fixed header */
+  padding-top: 10px; /* To avoid content overlapping with the fixed header */
 }
 
 section {
@@ -377,63 +377,35 @@ button:hover {
 
 
 /* Footer Styling */
-.site-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- 
-}
-
-.footer-content p {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-/* Social Icons */
-.social-icons {
-  display: flex;
-  gap: 15px;
-  margin-top: 10px;
-}
-
-.social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: white;
-  color: #f54291;
-  font-size: 1.5rem;
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
   text-decoration: none;
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.social-link i {
-  transition: color 0.3s ease;
+.fa:hover {
+  opacity: 0.7;
 }
 
-/* LinkedIn and Instagram Colors */
-.social-link.linkedin:hover {
-  background-color: #0077b5;
+.fa-linkedin {
+  /*background: blue;*/
   color: white;
-  transform: scale(1.2);
 }
 
-.social-link.instagram:hover {
-  background-color: #e1306c;
+.fa-linkedin-square	{
   color: white;
-  transform: scale(1.2);
 }
+
+
+.site-footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
 
 /* 404 Page */
 .page-404 {
@@ -483,5 +455,5 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-  
+
 }
