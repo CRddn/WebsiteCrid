@@ -4,15 +4,59 @@
   margin: 0;
   padding: 0;
   /*box-sizing: border-box;*/
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-
+  overflow: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Body Styling */
 body {
   font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light grey */
+  border-radius: 10px;
+}
+
+/* Handle (the draggable scrolling part) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #f54291, #e1347b); /* Gradient color */
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #d12e6b, #c1245f);
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background: #f54291;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+#scrollTopBtn:hover {
+  background: #e1347b;
+}
+
 
 /* Header */
 header {
@@ -21,7 +65,7 @@ header {
   left: 0;
   width: 100%;
   padding: 20px;
-  background-color: #333;
+  background-color: teal;
   z-index: 1000;
 	display: flex;
 	justify-content: flex-end;
