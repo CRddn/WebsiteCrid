@@ -380,6 +380,7 @@ button:hover {
 
 /* Footer Styling */
 .fa {
+  display: contents;
   padding: 20px;
   font-size: 30px;
   width: 50px;
