@@ -170,7 +170,7 @@ section {
 
 /* Section 2: About Me */
 .about {
-    background-color: lightblue;
+    background-color: black;
 }
 
 .about h2 {
@@ -333,7 +333,8 @@ button:hover {
 
 .about p, .projects p, .contact p {
   font-size: 1.2rem;
-  color: #333;
+  color: white;
+
 }
 
 
@@ -401,7 +402,7 @@ button:hover {
 
 
 .site-footer {
-  background-color: #222;
+  background-color: teal;
   color: white;
   text-align: center;
   padding: 20px;
