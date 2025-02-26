@@ -110,7 +110,7 @@ header {
 
 /* Main Content */
 main {
-  padding-top: 10px; /* To avoid content overlapping with the fixed header */
+  padding-top: 20px; /* To avoid content overlapping with the fixed header */
 }
 
 section {
@@ -118,8 +118,6 @@ section {
   min-height: 100vh;
   text-align: center;
 }
-
-
 
 
 /* Section 1: Introduction */
@@ -234,7 +232,8 @@ section {
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
-}
+    font-family: 'Montserrat', sans-serif;
+  }
 
 .contact button {
     background-color: #F54291;
