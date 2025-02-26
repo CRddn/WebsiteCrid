@@ -114,7 +114,7 @@ main {
 }
 
 section {
-  padding: 50px;
+  padding: 100px;
   min-height: 100vh;
   text-align: center;
 }
@@ -412,7 +412,7 @@ button:hover {
 
 /* 404 Page */
 .page-404 {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   height: 100vh;
