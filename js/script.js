@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Dynamic Typing Effect
     const dynamicText = document.getElementById("dynamic-text");
-    const words = ["a Web Developer", "a Marketer", "a Creative Thinker"];
+    const words = ["a Web Developer", "a IT Technician", "a Marketer Manager"];
     let wordIndex = 0;
     let letterIndex = 0;
     let isDeleting = false;
