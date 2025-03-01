@@ -34,19 +34,18 @@ document.addEventListener("DOMContentLoaded", function () {
         typeEffect();
     });
     
+// Mobile Menu Toggle 
+const menuIcon = document.getElementById("menu-icon");
+const navMenu = document.getElementById("nav-menu");
 
-    // Mobile Menu Toggle
-    const menuIcon = document.getElementById("menu-icon");
-    const navMenu = document.getElementById("nav-menu");
+menuIcon.addEventListener("click", function () {
+    menuIcon.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
 
-    menuIcon.addEventListener("click", function () {
-        menuIcon.classList.toggle("active");
-        navMenu.classList.toggle("active");
-    });
-
-    document.addEventListener("click", function (event) {
-        if (!menuIcon.contains(event.target) && !navMenu.contains(event.target)) {
-            menuIcon.classList.remove("active");
-            navMenu.classList.remove("active");
-        }
-    });
+document.addEventListener("click", function (event) {
+    if (!menuIcon.contains(event.target) && !navMenu.contains(event.target)) {
+        menuIcon.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+}); 

@@ -169,6 +169,7 @@ section {
 
 #dynamic-text {
     font-weight: bold;
+    font-size: 4vw;
     color: #F54291;
     border-right: 2px solid white;
     white-space: nowrap;
