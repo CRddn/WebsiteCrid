@@ -47,7 +47,9 @@ header {
   background-color: teal;
   z-index: 1000;
 	display: flex;
-	justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+	/*justify-content: flex-end;*/
 }
 
 /* Menu Icon */
@@ -141,6 +143,12 @@ section {
   padding: 100px;
   min-height: 100vh;
   text-align: center;
+}
+
+.logo img {
+width:60px;
+height: auto;
+
 }
 
 
@@ -363,6 +371,10 @@ button:hover {
   font-size: 1.2rem;
   color: white;
 
+}
+
+.about p {
+  font-size: 2vw;
 }
 
 
