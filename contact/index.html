@@ -5,55 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     
-    <script src="../js/script.js" defer></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <script src="/js/script.js" defer></script>
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-   <!-- Header with Hamburger Menu -->
 <!-- Header with Hamburger Menu -->
 <header>
     <div class="logo">
         <a href="/index.html">
             <img src="/images/logo_nobackground.png" alt="Crissy Logo">
         </a>
-        </div>
-
+    </div>
     <div class="menu-icon" id="menu-icon">
         <span class="line line1"></span>
         <span class="line line2"></span>
         <span class="line line3"></span>
     </div>
+    <nav class="nav-menu" id="nav-menu">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<!-- Navigation Menu -->
-<nav class="nav-menu" id="nav-menu">
-    <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav>
-
     <!-- Main Content -->
-    <main>
+    
         <section class="contact">
-            <h1>Contact Me</h1><br>
+            <h1>Contact Me</h1>
+            <p><br>Let’s connect and create something awesome! 🚀</br></p>
          <form action="https://formspree.io/f/xnnjkynj" method="POST" >
               <input type="text" name="name" placeholder="Your Name" required>
               <input type="email" name="email" placeholder="Your Email" required>
               <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
               <button type="submit">Send Message</button>
           </form>
-            <a href="https://au.linkedin.com/in/crissyridden" target="_blank" class="fa fa-linkedin"></a>
    </section>
-        </main>
 
      <!-- Footer (Same as index.html) -->
      <footer class="site-footer">
-        <p>&copy; Made with ❤️ by Crissy Ridden. 2025. All rights reserved. <a href="https://au.linkedin.com/in/crissyridden" target="_blank" class="fa fa-linkedin-square"></a>
+        <p>
+          &copy; Made with passion by Crissy Ridden. 2025. All rights reserved.
+          <a
+            href="https://au.linkedin.com/in/crissyridden"
+            target="_blank"
+            class="fa fa-linkedin"
+          ></a>
+          <a
+            href="https://facebook.com/crissy.ridden/"
+            target="_blank"
+            class="fa fa-facebook"
+          ></a>
+          <a
+          href="https://github.com/CRddn/"
+          target="_blank"
+          class="fa fa-github"
+        ></a>
         </p>
-    </footer>
+      </footer>
 
 </body>
 </html>
