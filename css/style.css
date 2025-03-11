@@ -1,9 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* General Styles */
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
-  height: 100%;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
 }
 
 /* HEADER */
@@ -13,12 +29,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 0px;
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1;
 }
 
 /* Logo */
@@ -59,7 +75,7 @@ header {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  margin-right: 30px;
+  margin-right: 5px;
 }
 
 .menu-icon .line {
@@ -94,11 +110,10 @@ header {
 
 #dynamic-text {
   font-size: 2rem;
-  font-weight: bold;
   color: fuchsia;
 }
 
-/*ABOUT SECTION */
+/*INTRO SECTION */
 .intro {
   position: relative;
   min-height: 100vh;
@@ -215,24 +230,25 @@ header {
 
 /* CONTACT PAGE */
 .contact {
-  background-color: black;
+  background-color: #f8f3ea;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  width: 100%;
 }
 
 .contact h1 {
   font-size: 2.5rem;
   color: teal;
-  margin-bottom: 20px;
+  margin-top: 50px;
   font-family: 'Montserrat', sans-serif;
 }
 
 .contact p {
-  color: white;
+  color: #0B1957;
   font-size: 1.5rem;
 }
 
@@ -260,7 +276,7 @@ header {
 }
 
 .contact button {
-  background-color: fuchsia;
+  background-color: #fa9ebc;
   color: white;
   padding: 15px 20px;
   margin-top: 10px;
@@ -275,29 +291,29 @@ header {
 
 /* ABOUT PAGE */
 .about {
-  background-color: black;
+  background-color: #f8f3ea;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  width: 100%;
 }
 
 .about h1 {
   font-size: 2.5rem;
   color: teal;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .about-container p {
   font-size: 1.2rem;
   line-height: 1.6;
   max-width: 600px;
-  color: white;
+  color: #0B1957;
   text-align: center;
   margin-bottom: 20px;
-  ;
 }
 
 .about-container {
@@ -307,7 +323,7 @@ header {
   justify-content: center;
   text-align: center;
   width: 90%;
-  max-width: 800px;
+  /*max-width: 800px;*/
 }
 
 .about img {
@@ -363,7 +379,7 @@ footer p {
 .fa {
   display: contents !important;
   padding: 20px;
-  font-size: 20px;
+  font-size: 10px;
   width: 50px;
   text-align: center;
   text-decoration: none;
@@ -397,8 +413,8 @@ footer p {
     flex-direction: column;
     background: black;
     position: absolute;
-    top: 60px;
-    right: 0;
+    top: 50px;
+    right: -35;
     width: 100%;
     text-align: center;
     padding: 0px 0;
@@ -413,7 +429,7 @@ footer p {
   }
 
   .nav-menu ul li {
-    margin: 10px 0;
+    margin: 5px 0;
   }
 
   /* Hamburger Menu Animation */
@@ -435,11 +451,11 @@ footer p {
   .menu-icon.active .line1,
   .menu-icon.active .line2,
   .menu-icon.active .line3 {
-    margin-right: 10px;
+    margin: 1.5px;
   }
 
   .contact {
-    background-color: black;
+    background-color: #f8f3ea;
     min-height: 100vh;
     padding: 10px;
     display: flex;
@@ -460,7 +476,7 @@ footer p {
 
   .contact p {
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: #0B1957;
     text-align: justify;
     font-size: 18px;
   }
