@@ -34,23 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     typeEffect();
 });
 
-
-
-    // Parallax Scroll Effect
-    window.addEventListener("scroll", function () {
-        const hero = document.querySelector(".hero");
-        const intro = document.querySelector(".about");
     
-        if (hero) {
-            hero.style.transform = `translateY(${window.scrollY * 0.5}px)`;
-        }
-        if (intro) {
-            intro.style.transform = `translateY(${window.scrollY * 0.5}px)`;
-        }
-    
-    });
-    
-
         const menuIcon = document.getElementById("menu-icon");
         const navMenu = document.getElementById("nav-menu");
     
@@ -60,4 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
             navMenu.classList.toggle("active");
             menuIcon.classList.toggle("active");
         });
+    }
+
+    function goHome() {
+        window.location.href = "/";
     }

@@ -22,7 +22,7 @@
   <!-- Header with Hamburger Menu -->
   <header>
     <div class="logo">
-        <a href="index.html">
+        <a href="/">
             <img src="images/logo_nobackground.png" alt="Crissy Logo">
         </a>
     </div>
@@ -33,7 +33,7 @@
     </div>
     <nav class="nav-menu" id="nav-menu">
         <ul>
-            <li><a href="index">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
         </ul>
@@ -41,6 +41,7 @@
 </header>
 
 <!-- Hero Section with Parallax -->
+<div class="container">
 <section class="hero">
     <div class="overlay">
         <h3>Hi! I am</h3>
@@ -53,7 +54,9 @@
     <div class="intro-container">
         <h2> I am an enthusiastic web developer with experience in marketing and IT support</h1>
         </h2>
-        <button class="button home"><a href="/about" target="_blank"></a>More about me</button> 
+        <a href="/about/index.html">
+            <button class="button">More about me</button>
+        </a>    
     </div>
 </section>
 
@@ -75,12 +78,12 @@
         </div>
     </div>
 </section>
-
+</div>
     
 <!-- Footer (Same as index.html) -->
 <footer class="site-footer">
     <p>
-      &copy; Made with passion by Crissy Ridden. 2025. All rights reserved.
+      &copy; Made with passion by Crissy Ridden. 2025. All rights reserved.<br>
       <a
       href="https://au.linkedin.com/in/crissyridden"
       target="_blank"
@@ -95,8 +98,8 @@
     href="https://github.com/CRddn/"
     target="_blank"
     class="fa fa-github"
-  ></a>
-    </p>
+  ></a> 
+</p> 
   </footer>
 
 </body>
