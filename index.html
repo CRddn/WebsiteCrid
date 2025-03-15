@@ -33,7 +33,6 @@
     </div>
     <nav class="nav-menu" id="nav-menu">
         <ul>
-            <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
         </ul>
@@ -42,21 +41,67 @@
 
 <!-- Hero Section with Parallax -->
 <div class="container">
+
 <section class="hero">
-    <div class="overlay">
+    <div class="hero-container">
+        <div class="hero-text">
         <h3>Hi! I am</h3>
         <h1>Crissy Ridden </h1>
-        <p> * <span id="dynamic-text"></span></p>
+        <p>  <span id="dynamic-text"></span></p>
+   </div> 
+
+    <div  class="headshot"> <img
+    src="/images/Crissy linkedin headshot light.jpg" style="max-width:50%; height:auto;"
+    alt="About Me">
+</div>
     </div>
 </section>
 
-<section class="intro">
+<!-- <section class="intro">
     <div class="intro-container">
-        <h2> I am an enthusiastic web developer with experience in marketing and IT support</h1>
-        </h2>
-        <a href="/about/index.html">
+        <p> I am an enthusiastic <strong>Front End Developer</strong> with experience in IT support and marketing</p>
+        <a href="/about//">
             <button class="button">More about me</button>
         </a>    
+    </div>
+</section> -->
+
+<!-- Skills Section -->
+<section class="skills">
+    <div class="skills-container">
+        <h2>My Skills</h2>
+
+        <div class="description">
+            <p> I am an enthusiastic <strong>Front End Developer</strong> with experience in IT support and marketing</p>
+        </div>
+        
+        <div class="skill">
+            <span>HTML</span>
+            <div class="progress-bar">
+                <div class="progress" data-width="40%">40%</div>
+            </div>
+        </div>
+        
+        <div class="skill">
+            <span>CSS</span>
+            <div class="progress-bar">
+                <div class="progress" data-width="60%">60%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>JavaScript</span>
+            <div class="progress-bar">
+                <div class="progress" data-width="50%">50%</div>
+            </div>
+        </div>
+
+        <!--<div class="skill">
+            <span>React</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 30%;">30%</div>
+            </div>
+        </div>-->
     </div>
 </section>
 
@@ -66,15 +111,36 @@
         <h2>My Projects</h2>
         <div class="project">
             <h3>333 Collins</h3>
-            <p>WordPress; CSS, HTML & JavaScript</p>
+            <ul>
+             <li>WordPress</li> 
+             <li>CSS</li>
+             <li>JavaScript</li>
+             </ul>
         </div>
         <div class="project">
             <h3>Dutchies Travel</h3>
-            <p>Laravel - React; CSS & HTML</p>
+            <ul>
+                <li>
+                    Laravel
+                </li>
+                <li>
+                    React
+                </li>
+                <li>
+                    CSS & HTML
+                </li>
+            </ul>
         </div>
         <div class="project">
             <h3>Sightseeing Tours Australia</h3>
-            <p>WordPress: CSS & HTML</p>
+            <ul>
+                <li>
+                    Wordpress
+                </li>
+                <li>
+                    CSS & HTML
+                </li>
+            </ul>
         </div>
     </div>
 </section>

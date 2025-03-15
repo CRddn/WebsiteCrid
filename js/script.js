@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Dynamic Typing Effect
-    const words = ["a Web Developer", "an IT Technician", "a Marketing Manager"];
+    const words = ["Web Developer", "IT Technician", "Marketing Manager"];
     let wordIndex = 0;
     let letterIndex = 0;
     let isDeleting = false;
@@ -49,3 +49,33 @@ document.addEventListener("DOMContentLoaded", function () {
     function goHome() {
         window.location.href = "/";
     }
+
+    /*SKILLS SECTION*/
+    document.addEventListener("DOMContentLoaded", function() {
+        const skillsSection = document.querySelector(".skills");
+        const progressBars = document.querySelectorAll(".progress");
+
+        const options = {
+            root: null, // Observes viewport
+            threshold: 0.5 // Triggers when 50% of section is visible
+        };
+    
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Animate progress bars when visible
+                    progressBars.forEach(bar => {
+                        bar.style.width = bar.getAttribute("data-width");
+                    });
+                } else {
+                    // Reset bars when scrolling away
+                    progressBars.forEach(bar => {
+                        bar.style.width = "0%";
+                    });
+                }
+            });
+        }, options);
+    
+        observer.observe(skillsSection);
+    });
+    
