@@ -117,12 +117,14 @@ header {
 
 .headshot img {
   border-radius: 10px;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px; /* Ensures it doesn’t shrink too much */
+  width: 50%; /* Default width */
   flex-shrink: 0; /* Ensures image doesn't shrink */
-    justify-content: center; /* Center image */
-    flex-grow: 0; /* Prevent image from growing beyond its natural size */
-  flex-basis: auto; /* Ensure the image uses its natural size */
+  justify-content: center; /* Center image */
+  flex-grow: 0; /* Prevent image from growing beyond its natural size */
+  object-fit: cover;
   display: block; /* Remove any inline spacing */
   margin: 0 auto; /* Center the image horizontally */
 }
@@ -141,12 +143,15 @@ header {
   gap: 3rem; /* Space between text and image */
   max-width: 1200px;
   width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hero-text {
   flex: 1; /* Takes available space */
   display: flex;
   flex-direction: column; /* Stack text elements */
+  text-align: left;
 }
 
 .dynamic-text-container {
@@ -154,12 +159,15 @@ header {
   min-height: 1.2rem;
 }
 
-.hero-text p {
-  min-height: 1.2em; /* Prevents text shifting */
+.hero-text h3 {
+  min-height: 2rem;
 }
 
-.hero h1 {
-  font-size: 3rem;
+.hero-text p {
+  min-height: 1.2rem; /* Prevents text shifting */
+}
+
+.hero-text h1 {
   padding-bottom: 30px;
 }
 
@@ -192,24 +200,30 @@ header {
   }
 
   .hero-text {
-    text-align: center; /* Center text */
+    text-align: left;
   }
 
-  .hero h1 {
-    font-size: 2rem; /* Smaller font size */
+  .hero-text h1 {
+    font-size: 1.2rem;
     padding-bottom: 15px;
+    font-family: 'Playfair Display Bold', serif;
+  }
+
+  .hero-text h3 {
+    font-size: 0.8rem;
+    font-family: 'Fira Code', monospace;
   }
 
   #dynamic-text {
-    font-size: 1.5rem; /* Smaller font size */
+    font-size: 1px; /* Smaller font size */
     min-width: auto; /* Remove min-width */
   }
 
   .headshot img {
-    max-width: 80%; /* Limit image size */
-    margin: 0 auto; /* Center the image */
-  }
-
+    max-width: 60%; /* Adjust size to fit better */
+    min-width: 150px; /* Ensures it stays visible */
+    margin: 0;
+}
 }
 
 /* For medium screens (Tablets) */
@@ -225,12 +239,19 @@ header {
   }
 
   .hero h1 {
-    font-size: 2.5rem; /* Smaller font size */
+    font-size: 2rem;
     padding-bottom: 20px;
+    text-align: left;
+  }
+
+  .hero h3 {
+    font-size: 0.8rem;
+    text-align: left;
   }
 
   #dynamic-text {
-    font-size: 1.8rem; /* Adjust font size */
+    font-size: 0.9rem; /* Adjust font size */
+    text-align: left;
   }
 
   .headshot img {
@@ -250,11 +271,22 @@ header {
   }
 
   .hero h1 {
-    font-size: 3rem; /* Keep original font size */
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 64px;
+  }
+
+  .hero-text h3 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 600;
+  font-size: 24px;
   }
 
   #dynamic-text {
-    font-size: 2rem; /* Maintain larger font size */
+  font-family: 'Vollkorn', serif;
+  font-weight: 500;
+  font-size: 28px;
+  animation: fadeIn 1.5s ease-in-out;
   }
 
   .headshot img {
