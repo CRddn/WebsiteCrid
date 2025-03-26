@@ -18,6 +18,7 @@ body {
   height: auto;
   min-height: 100vh;
   width: 100%;
+  background: linear-gradient(180deg, #0072ff, #00aaff, #0090dd, #0072ff);
 }
 
 .container {
@@ -38,7 +39,7 @@ body {
 
 /* HEADER */
 header {
-  background: black;
+  background: #0B1957;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -106,7 +107,6 @@ header {
   min-height: 100vh;
   /*background: linear-gradient(135deg, #eeaeca, #94bbe9);*/
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-  /*background: radial-gradient(circle, rgb(108, 128, 233) 0%, rgb(245, 214, 220) 100%);*/
   background-attachment: fixed;
   display: flex;
   justify-content: center;
@@ -155,12 +155,17 @@ header {
 }
 
 .dynamic-text-container {
-  margin-top: 1rem;
   min-height: 1.2rem;
+  min-height: 40px; /* Adjust based on the tallest job title */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centering the text */
 }
 
-.hero-text h3 {
+.hero-text h4 {
   min-height: 2rem;
+  font-family: 'Fira Code', monospace;
+font-weight: lighter;
 }
 
 .hero-text p {
@@ -169,10 +174,12 @@ header {
 
 .hero-text h1 {
   padding-bottom: 30px;
+
 }
 
 #dynamic-text {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   color:#0B1957;
   display: inline-block;
     min-width: 200px;  /* Set width to fit the longest word */
@@ -209,14 +216,17 @@ header {
     font-family: 'Playfair Display Bold', serif;
   }
 
-  .hero-text h3 {
+  .hero-text h4 {
     font-size: 0.8rem;
     font-family: 'Fira Code', monospace;
+    font-weight: lighter;
   }
 
   #dynamic-text {
     font-size: 1px; /* Smaller font size */
     min-width: auto; /* Remove min-width */
+    opacity: 1;
+    font-family: 'Vollkorn', serif;
   }
 
   .headshot img {
@@ -238,20 +248,26 @@ header {
     gap: 2rem; /* Reduce gap */
   }
 
-  .hero h1 {
+  .hero-text h1 {
     font-size: 2rem;
     padding-bottom: 20px;
     text-align: left;
+    font-family: 'Playfair Display', serif;
+
   }
 
-  .hero h3 {
+  .hero-text h4 {
     font-size: 0.8rem;
     text-align: left;
+    font-weight: lighter;
+    font-family: 'Fira Code', monospace;
   }
 
   #dynamic-text {
     font-size: 0.9rem; /* Adjust font size */
     text-align: left;
+    font-family: 'Vollkorn', serif;
+
   }
 
   .headshot img {
@@ -270,15 +286,15 @@ header {
     gap: 3rem; /* Maintain large gap */
   }
 
-  .hero h1 {
+  .hero-text h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 64px;
   }
 
-  .hero-text h3 {
-  font-family: 'DM Serif Display', serif;
-  font-weight: 600;
+  .hero-text h4 {
+  font-family: 'Fira Code', monospace;
+  font-weight: lighter;
   font-size: 24px;
   }
 
@@ -305,6 +321,12 @@ header {
 .skills-container {
   min-width: 500px;
   margin: 0 auto;
+}
+
+.skills-container h2 {
+  color: #0B1957;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .skill {
@@ -350,6 +372,10 @@ header {
     padding: 1rem; /* Reduce padding */
   }
   
+  .skills-container h2 {
+color:#0B1957;
+  }
+
   .skill {
     margin: 0.5rem 0; /* Reduce space between skills */
   }
@@ -373,6 +399,10 @@ header {
 @media (max-width: 768px) {
   .skills-container {
     min-width: 80%; /* Adjust container width */
+  }
+
+  .skills-container h2 {
+    color:#0B1957;
   }
 
   .skill {
@@ -405,6 +435,12 @@ header {
 
   .progress {
     line-height: 25px; /* Set line height back to original */
+  }
+
+  .skills-container h2{
+    color:#0B1957;
+    font-weight: bold;
+font-size: 2rem;
   }
 }
 
@@ -460,7 +496,7 @@ header {
 }
 
 .projects h2 {
-  color: white;
+  color: #0B1957;
   font-weight: bold;
   position: absolute;
   margin-top: -100px;
@@ -514,6 +550,7 @@ text-align: left;
 @media (max-width: 768px) {
   .projects h2 {
     font-size: 1.8rem;
+    color:#0B1957;
   }
 
   .project ul li {
@@ -583,7 +620,7 @@ font-size: 1rem;
 
 .contact h1 {
   font-size: 2.5rem;
-  color: teal;
+  color: #0B1957;
   margin-top: 70px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -644,9 +681,10 @@ font-size: 1rem;
 
 .about h1 {
   font-size: 2.5rem;
-  color: teal;
+  color: #0B1957;
   margin-top: 100px;
   margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .about-container p {
@@ -679,6 +717,7 @@ font-size: 1rem;
   .about h1 {
     font-size: 2rem;
     margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .about-container p {
@@ -694,7 +733,8 @@ font-size: 1rem;
 
   .about h1 {
     font-size: 1.8rem;
-    margin-top: 15px
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .about-container p {
@@ -708,7 +748,7 @@ font-size: 1rem;
 
 /* FOOTER */
 footer {
-  background: black;
+  background: #0B1957;
   padding: 10px;
   color: rgb(153, 152, 152);
   text-align: center;
@@ -776,7 +816,7 @@ font-size: 12px;
   .nav-menu {
     display: none;
     flex-direction: column;
-    background: black;
+    background: #0B1957;
     position: absolute;
     top: 50px;
     right: -35;
@@ -834,7 +874,7 @@ font-size: 12px;
     font-size: clamp(28px, 5vw, 36px);
     /* Responsive font size */
     margin-top: 100px;
-    color: teal;
+    color: #0B1957;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
   }
@@ -896,6 +936,7 @@ font-size: 12px;
     .contact h1 {
       font-size: 24px;
       margin-top: 30px;
+      font-family: 'Montserrat', sans-serif;
     }
 
     .contact form {
