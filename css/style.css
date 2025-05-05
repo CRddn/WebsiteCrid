@@ -22,7 +22,7 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-.parallax {
+/*.parallax {
   position: relative;
   height: 100vh;
   display: flex;
@@ -34,13 +34,13 @@ body {
   background-position: center;
   text-align: center;
   padding: 2rem;
-}
+}*/
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .parallax {
     background-attachment: scroll;
   }
-}
+}*/
 
 .container {
   position: relative;
@@ -125,7 +125,7 @@ header {
 
 /* HERO SECTION WITH PARALLAX */
 .hero {
-  background: linear-gradient(to bottom, #fff0f6, #fce4ec); /* blush to soft pink */
+  /*background: linear-gradient(to bottom, #fff0f6, #fce4ec); /* blush to soft pink */
  /*background: #F6F4F0;*/
   /*background-image: url(/images/resul-mentes-DbwYNr8RPbg-unsplash.jpg);*/
   /*position: relative;
@@ -169,7 +169,7 @@ header {
   flex-direction: row; /* Side-by-side layout */
   align-items: center;
   gap: 3rem; /* Space between text and image */
-  max-width: 1200px;
+  max-width: 100em;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
@@ -270,24 +270,28 @@ color: #2E5077;
     min-width: 150px; /* Ensures it stays visible */
 }
 }
-/*.container section {
-  position: sticky;
-  width: 100%;
-  height: 60vh;
-}*/
+
 
 
 /* For medium screens (Tablets) */
 @media (min-width: 481px) and (max-width: 991px) {
   .hero {
-    min-height: 90vh; /* Adjust height */
-    padding: 1.5rem; /* Adjust padding */
-    background: linear-gradient(to bottom, #fff0f6, #fce4ec); /* blush to soft pink */
+    /*background-image: url('/images/section_1.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
+    min-height: 90vh; 
+    padding: 1.5rem; */
+    background: linear-gradient(to bottom, #fff0f6, #fce4ec); 
   }
 
   .hero-container {
     flex-direction: row; /* Keep side-by-side layout */
     /*gap: 2rem; /* Reduce gap */
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 
   .hero-text h1 {
@@ -326,12 +330,14 @@ color: #2E5077;
 
 /* For larger screens (Desktop and up) */
 @media (min-width: 992px) and (max-width: 1199px){
-.hero {
-  background: linear-gradient(to bottom, #fff0f6, #fce4ec); /* blush to soft pink */
+  .hero {
+      background: linear-gradient(to bottom, #fff0f6, #fce4ec); /* blush to soft pink */
 }
 
   .hero-container {
     gap: 3rem; /* Maintain large gap */
+    margin: 0 auto;
+    padding: 0 20px;
   }
 
   .hero-text h1 {
@@ -367,14 +373,21 @@ color: #2E5077;
 }
 
 @media (min-width: 1200px){
+.hero {
+  /*background-image: url('/images/section_1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;*/
+}
+
 .hero-text h1{
-  font-size: 6rem;
+  font-size: 10rem;
   font-family: 'Corinthia', cursive;
   /*font-weight: 700;*/
   text-transform: capitalize;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
-
+ 
 .hero h4 {
   font-family: 'Merriweather', serif;
   font-weight: lighter;
@@ -384,6 +397,10 @@ color: #2E5077;
 
 #dynamic-text {
   color: rgb(224, 3, 114);
+}
+
+.hero-text {
+  flex: 2; /* Takes available space */
 }
 }
 
@@ -488,11 +505,17 @@ text-align: left;
 /* For medium screens (Tablets) */
 @media (min-width: 481px) and (max-width: 991px) {
 .skills {
-  background: linear-gradient(to bottom, #fce4ec, #f3e5f5); /* pink to soft purple */
+  /*background-image: url('/images/section_2.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;*/
+  /*background: linear-gradient(to bottom, #fce4ec, #f3e5f5); /* pink to soft purple */
 }
 
   .skills-container {
     min-width: 80%; /* Adjust container width */
+  margin: 0 auto;
+  padding: 0 20px;
   }
 
   .skills-container h2 {
@@ -527,6 +550,8 @@ text-align: left;
   .skills-container {
     min-width: 600px; /* Maintain a minimum width for larger screens */
   width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
   }
 
   .progress-bar {
@@ -650,7 +675,11 @@ text-align: left;
 /* ✅ Tablet (768px and smaller) */
 @media (min-width: 481px) and (max-width: 991px) {
 .projects {
-  background: linear-gradient(to bottom, #f3e5f5, #e3f2fd); /* purple to sky blue */
+  /*background-image: url('/images/section_3.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;*/
+  /*background: linear-gradient(to bottom, #f3e5f5, #e3f2fd); /* purple to sky blue */
 }
 
   .projects h2 {
@@ -682,7 +711,6 @@ font-size: 1rem;
 
   .project h3 {
     font-size: 1.2rem;
-
   }
 }
 
@@ -751,6 +779,8 @@ font-size: 1rem;
     justify-content: center;
     }
 
+    .project-container h2 {
+    }
 }
 
 @media (min-width: 1200px){
@@ -972,7 +1002,7 @@ text-align: center;
 /* Icons */
 .footer-icons a {
   margin-left: 10px;
-  font-size: 20px;
+  /*font-size: 20px;*/
   text-decoration: none;
   color: white;
 }
@@ -995,7 +1025,15 @@ text-align: center;
   }
 }
 
+@media (max-width: 480px) {
+  .footer-text {
+font-size: 0.8rem;
+  }
 
+  .footer-icons {
+  font-size: 15px;
+  }
+}
 
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
@@ -1224,12 +1262,9 @@ position: relative;
 .error h2 {
 color:#e0357b;
 text-align: left;
-font-size: 5rem;
-animation: bounce 1s infinite alternate;
 }
 
 .error {
-  font-size: 150px;
   font-weight: bold;
   animation: bounce 1s infinite alternate;
   color:#0B1957;
@@ -1279,8 +1314,9 @@ font-weight: bold;
 
 
   @media (min-width: 481px) and (max-width: 991px) {  
-    .error h2{
-      font-size: 3rem;
+    .error {
+      font-size: 8.5rem;
+      font-weight: bold;
     }
 
     .message {
@@ -1294,16 +1330,50 @@ line-height: 1.3;
 }
 
 @media (max-width: 480px) {
-  .error h2{
-    font-size: 2rem;
+  .error  {
+    font-size: 5rem;
+    font-weight: lighter;
   }
 
   .message {
 font-size: 1rem;
 line-height: 1.3;
+text-align: center;
   }
 
   .btn {
     font-size: 0.8rem;
   }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .error {
+    font-size: 10rem;
+  }
+}
+
+@media (min-width: 1200px) {
+.error {
+  font-size: 14rem;
+}
+}
+
+/*-----------------------------------------*/
+
+.parallax > * {
+  transform: translateZ(-1px) scale(2); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.parallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  will-change: transform;
+  perspective: 1px;
+  transform-style: preserve-3d;
 }
