@@ -124,7 +124,7 @@ header {
 }
 
 /* HERO SECTION WITH PARALLAX */
-.hero {
+/*.hero {
   /*background: linear-gradient(to bottom, #fff0f6, #fce4ec); /* blush to soft pink */
   /*position: relative;
   min-height: 100vh;
@@ -135,8 +135,8 @@ header {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  width: 100%;*/
-}
+  width: 100%;
+}*/
 
 .headshot img {
   border-radius: 10px;
